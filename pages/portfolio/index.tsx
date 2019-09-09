@@ -1,15 +1,15 @@
 import { NextPage } from "next";
 import Head from "next/head";
 
-const Home: NextPage = () => {
+const Portfolio: NextPage = () => {
   return (
     <>
       <Head>
-        <title>PabloSz</title>
+        <title>Portfolio</title>
       </Head>
-      <div>Home</div>
+      <div>Portfolio</div>
     </>
   );
 };
 
-export default Home;
+export default Portfolio;
