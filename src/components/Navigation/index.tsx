@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { NextRouter, withRouter } from "next/router";
 import { FunctionComponent } from "react";
+import { Box, Flex } from "rebass";
 import { Image, Menu, Segment } from "semantic-ui-react";
 
 const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
@@ -16,12 +17,27 @@ const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
   );
 
   return (
-    <Segment inverted>
-      <Image avatar src="/static/avatar.png" />
-      <Menu inverted secondary>
-        <MenuItem pathname="/" name="Home" />
-        <MenuItem pathname="/portfolio" name="Portfolio" />
-      </Menu>
+    <Segment inverted style={{ margin: 0 }}>
+      <Flex alignItems="center">
+        <Box width={1 / 12}></Box>
+        <Box>
+          <Link href="/">
+            <Image
+              href="/"
+              className="cursorHover"
+              size="tiny"
+              src="/static/avatar.png"
+            />
+          </Link>
+        </Box>
+        <Box width={1 / 18}></Box>
+        <Box>
+          <Menu inverted secondary fluid size="massive">
+            <MenuItem pathname="/" name="Home" />
+            <MenuItem pathname="/portfolio" name="Portfolio" />
+          </Menu>
+        </Box>
+      </Flex>
     </Segment>
   );
 };
