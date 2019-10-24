@@ -13,11 +13,9 @@ enum PortfolioOptions {
 const { sinanticaFES, lalaTrAC } = PortfolioOptions;
 
 const Portfolio: NextPage = () => {
-  const [active, setActive] = useRememberState(
-    "portfolioMenu",
-    sinanticaFES,
-    true
-  );
+  const [active, setActive] = useRememberState("portfolioMenu", sinanticaFES, {
+    SSR: true,
+  });
 
   const MenuItem: FunctionComponent<{ name: PortfolioOptions }> = ({
     name,

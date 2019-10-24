@@ -1,20 +1,19 @@
 import { NextPage } from "next";
-import Head from "next/head";
-import { Header, Icon } from "semantic-ui-react";
+import { Header, Icon, Segment } from "semantic-ui-react";
 import styled from "styled-components";
 
 const HeaderCover = styled(Header)`
-  font-size: 10em;
-  padding-bottom: 3em;
+  font-size: 5vw;
 `;
 
-const HomeCover = styled.div`
+const HomeCover = styled.div<{ backgroundImg: string; navMargin?: boolean }>`
   width: 100%;
-  min-height: 100vh;
+  min-height: ${({ navMargin }) =>
+    navMargin ? "calc(100vh - 58px)" : "100vh"};
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/static/coverimg2.jpeg");
+  background-image: url(${({ backgroundImg }) => backgroundImg});
   background-size: cover;
   background-position: fixed;
 `;
@@ -22,15 +21,19 @@ const HomeCover = styled.div`
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>PabloSz</title>
-      </Head>
-      <HomeCover>
-        <HeaderCover as="h1" inverted>
-          <Icon name="hand peace outline" />
-          Hi, I'm Pablo Sáez
-        </HeaderCover>
+      <HomeCover backgroundImg="/coverimg2.jpeg" navMargin>
+        <Segment secondary circular>
+          <HeaderCover as="h1" inverted>
+            <Icon name="hand peace outline" />
+            Hi, I'm Pablo Sáez
+          </HeaderCover>
+        </Segment>
       </HomeCover>
+      {/* <HomeCover backgroundImg="/coverimage1.jpg">
+        <Segment size="massive" secondary>
+          This Website is made to show some of some of my work
+        </Segment>
+      </HomeCover> */}
     </>
   );
 };

@@ -1,6 +1,7 @@
 import App from "next/app";
 
 import Navigation from "../src/components/Navigation";
+import Head from "next/head";
 
 class MyApp extends App {
   render() {
@@ -8,6 +9,9 @@ class MyApp extends App {
 
     return (
       <>
+        <Head>
+          <title>PabloSz</title>
+        </Head>
         <Navigation />
         <Component {...pageProps} />
       </>

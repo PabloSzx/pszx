@@ -17,8 +17,8 @@ const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
   );
 
   return (
-    <Segment inverted style={{ margin: 0 }}>
-      <Flex alignItems="center">
+    <Segment inverted style={{ margin: 0, width: "100%" }}>
+      <Flex alignItems="center" height="30px">
         <Box width={1 / 12}></Box>
         <Box>
           <Link href="/">
@@ -26,7 +26,7 @@ const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
               href="/"
               className="cursorHover"
               size="tiny"
-              src="/static/avatar.png"
+              src="/avatar.png"
             />
           </Link>
         </Box>

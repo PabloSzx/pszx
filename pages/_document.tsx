@@ -14,10 +14,10 @@ export default class MyDocument extends Document<{ styleTags: JSX.Element[] }> {
             href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
             rel="stylesheet"
           />
-          <link rel="stylesheet" type="text/css" href="/static/style.css" />
+          <link rel="stylesheet" type="text/css" href="/style.css" />
           {this.props.styleTags}
           <meta charSet="utf-8" />
-          <link rel="shortcut icon" href="/static/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
