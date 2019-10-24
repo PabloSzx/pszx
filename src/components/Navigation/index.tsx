@@ -1,16 +1,18 @@
 import Link from "next/link";
-import { NextRouter, withRouter } from "next/router";
-import { FunctionComponent } from "react";
+import { useRouter } from "next/router";
+import { FC, FunctionComponent } from "react";
 import { Box, Flex } from "rebass";
 import { Image, Menu, Segment } from "semantic-ui-react";
 
-const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
+const Navigation: FC = () => {
+  const { push, pathname: routerPathname } = useRouter();
+
   const MenuItem: FunctionComponent<{ pathname: string; name: string }> = ({
     pathname,
     name,
   }) => (
     <Link href={pathname}>
-      <Menu.Item name={pathname} active={pathname === router.pathname}>
+      <Menu.Item name={pathname} active={pathname === routerPathname}>
         {name}
       </Menu.Item>
     </Link>
@@ -21,14 +23,12 @@ const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
       <Flex alignItems="center" height="30px">
         <Box width={1 / 12}></Box>
         <Box>
-          <Link href="/">
-            <Image
-              href="/"
-              className="cursorHover"
-              size="tiny"
-              src="/avatar.png"
-            />
-          </Link>
+          <Image
+            className="cursorHover"
+            size="tiny"
+            src="/avatar.png"
+            onClick={() => push("/")}
+          />
         </Box>
         <Box width={1 / 18}></Box>
         <Box>
@@ -42,4 +42,4 @@ const Navigation: FunctionComponent<{ router: NextRouter }> = ({ router }) => {
   );
 };
 
-export default withRouter(Navigation);
+export default Navigation;

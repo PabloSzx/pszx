@@ -15,6 +15,7 @@ export default class MyDocument extends Document<{ styleTags: JSX.Element[] }> {
             rel="stylesheet"
           />
           <link rel="stylesheet" type="text/css" href="/style.css" />
+          <link rel="stylesheet" type="text/css" href="/nprogress.css" />
           {this.props.styleTags}
           <meta charSet="utf-8" />
           <link rel="shortcut icon" href="/favicon.ico" />
