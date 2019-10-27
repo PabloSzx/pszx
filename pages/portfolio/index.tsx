@@ -8,7 +8,7 @@ enum PortfolioOptions {
   awesomeTemplates = "Awesome Templates",
   sinanticaFES = "Sinantica FES",
   lalaTrAC = "LALA TrAC",
-  lalaVERA = "LALA VERA",
+  lalaVERA = "LALA VERA"
 }
 
 const { sinanticaFES, lalaTrAC, lalaVERA, awesomeTemplates } = PortfolioOptions;
@@ -17,18 +17,22 @@ const SinanticaFES: FC = () => {
   return (
     <Grid centered>
       <Grid.Row>
-        <Image
-          src="/2019-10/sinanticafes1.png"
-          size="huge"
-          alt="Sinantica FES Screenshot"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/sinanticafes1.png"
+            size="huge"
+            alt="Sinantica FES Screenshot"
+          />
+        </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Image
-          src="/2019-10/sinanticafes2.gif"
-          size="huge"
-          alt="Sinantica FES GIF"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/sinanticafes2.gif"
+            size="huge"
+            alt="Sinantica FES GIF"
+          />
+        </Grid.Column>
       </Grid.Row>
     </Grid>
   );
@@ -38,11 +42,13 @@ const LALATrAC: FC = () => {
   return (
     <Grid centered>
       <Grid.Row>
-        <Image
-          src="/2019-10/trac1.png"
-          size="huge"
-          alt="LALA TrAC Screenshot"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/trac1.png"
+            size="huge"
+            alt="LALA TrAC Screenshot"
+          />
+        </Grid.Column>
       </Grid.Row>
     </Grid>
   );
@@ -51,18 +57,22 @@ const LALAVera: FC = () => {
   return (
     <Grid centered>
       <Grid.Row>
-        <Image
-          src="/2019-10/vera1.png"
-          size="huge"
-          alt="LALA VERA Screenshot"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/vera1.png"
+            size="huge"
+            alt="LALA VERA Screenshot"
+          />
+        </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Image
-          src="/2019-10/vera2.png"
-          size="huge"
-          alt="LALA VERA Screenshot"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/vera2.png"
+            size="huge"
+            alt="LALA VERA Screenshot"
+          />
+        </Grid.Column>
       </Grid.Row>
     </Grid>
   );
@@ -81,18 +91,22 @@ const AwesomeTemplates: FC = () => {
         </Segment>
       </Grid.Row>
       <Grid.Row>
-        <Image
-          src="/2019-10/awesometemplates1.png"
-          size="huge"
-          alt="Awesome Templates Screenshot"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/awesometemplates1.png"
+            size="huge"
+            alt="Awesome Templates Screenshot"
+          />
+        </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Image
-          src="/2019-10/awesometemplates2.png"
-          size="huge"
-          alt="Awesome Templates Screenshot"
-        />
+        <Grid.Column>
+          <Image
+            src="/2019-10/awesometemplates2.png"
+            size="huge"
+            alt="Awesome Templates Screenshot"
+          />
+        </Grid.Column>
       </Grid.Row>
     </Grid>
   );
@@ -103,7 +117,7 @@ const Portfolio: NextPage = () => {
     "portfolioMenu",
     awesomeTemplates,
     {
-      SSR: true,
+      SSR: true
     }
   );
 
