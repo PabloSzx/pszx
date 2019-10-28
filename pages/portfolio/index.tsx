@@ -13,6 +13,16 @@ enum PortfolioOptions {
 
 const { sinanticaFES, lalaTrAC, lalaVERA, awesomeTemplates } = PortfolioOptions;
 
+// const TextSegment: FC = ({ children }) => {
+//   return (
+//     <Grid.Row textAlign="justified">
+//       <Segment textAlign="justified" padded="very" size="massive">
+//         {children}
+//       </Segment>
+//     </Grid.Row>
+//   );
+// };
+
 const SinanticaFES: FC = () => {
   return (
     <Grid centered>
@@ -20,18 +30,13 @@ const SinanticaFES: FC = () => {
         <Grid.Column>
           <Image
             src="/2019-10/sinanticafes1.png"
-            size="huge"
             alt="Sinantica FES Screenshot"
           />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
-          <Image
-            src="/2019-10/sinanticafes2.gif"
-            size="huge"
-            alt="Sinantica FES GIF"
-          />
+          <Image src="/2019-10/sinanticafes2.gif" alt="Sinantica FES GIF" />
         </Grid.Column>
       </Grid.Row>
     </Grid>
@@ -43,11 +48,7 @@ const LALATrAC: FC = () => {
     <Grid centered>
       <Grid.Row>
         <Grid.Column>
-          <Image
-            src="/2019-10/trac1.png"
-            size="huge"
-            alt="LALA TrAC Screenshot"
-          />
+          <Image src="/2019-10/trac1.png" alt="LALA TrAC Screenshot" />
         </Grid.Column>
       </Grid.Row>
     </Grid>
@@ -58,20 +59,12 @@ const LALAVera: FC = () => {
     <Grid centered>
       <Grid.Row>
         <Grid.Column>
-          <Image
-            src="/2019-10/vera1.png"
-            size="huge"
-            alt="LALA VERA Screenshot"
-          />
+          <Image src="/2019-10/vera1.png" alt="LALA VERA Screenshot" />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
-          <Image
-            src="/2019-10/vera2.png"
-            size="huge"
-            alt="LALA VERA Screenshot"
-          />
+          <Image src="/2019-10/vera2.png" alt="LALA VERA Screenshot" />
         </Grid.Column>
       </Grid.Row>
     </Grid>
@@ -90,11 +83,11 @@ const AwesomeTemplates: FC = () => {
           </Segment>
         </Segment>
       </Grid.Row>
+
       <Grid.Row>
         <Grid.Column>
           <Image
             src="/2019-10/awesometemplates1.png"
-            size="huge"
             alt="Awesome Templates Screenshot"
           />
         </Grid.Column>
@@ -103,7 +96,6 @@ const AwesomeTemplates: FC = () => {
         <Grid.Column>
           <Image
             src="/2019-10/awesometemplates2.png"
-            size="huge"
             alt="Awesome Templates Screenshot"
           />
         </Grid.Column>
