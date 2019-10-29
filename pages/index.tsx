@@ -4,6 +4,9 @@ import styled from "styled-components";
 
 const HeaderCover = styled(Header)`
   font-size: 5vw;
+  @media only screen and (max-width: 650px) {
+    font-size: 2.5em;
+  }
 `;
 
 const HomeCover = styled.div<{ backgroundImg: string; navMargin?: boolean }>`

@@ -14,7 +14,8 @@
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-pose": "^4.0.9",
-    "rebass": "^4.0.6",
+    "react-use": "^12.9.1",
+    "reflexbox": "^4.0.6",
     "semantic-ui-react": "^0.88.1",
     "styled-components": "^4.4.0",
     "use-remember-state": "^1.1.2"
@@ -24,7 +25,7 @@
     "@types/nprogress": "^0.2.0",
     "@types/react": "16.9.9",
     "@types/react-dom": "16.9.2",
-    "@types/rebass": "^4.0.3",
+    "@types/reflexbox": "^4.0.0",
     "@types/styled-components": "^4.1.19",
     "typescript": "^3.6.4"
   }

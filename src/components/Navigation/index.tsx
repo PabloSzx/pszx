@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC, FunctionComponent } from "react";
-import { Box, Flex } from "rebass";
+import { Box, Flex } from "reflexbox";
 import { Image, Menu, Segment } from "semantic-ui-react";
+import styled from "styled-components";
+
+const StyledSegment = styled(Segment)`
+  margin: 0;
+  width: 100%;
+`;
 
 const Navigation: FC = () => {
   const { push, pathname: routerPathname } = useRouter();
@@ -19,10 +25,10 @@ const Navigation: FC = () => {
   );
 
   return (
-    <Segment inverted style={{ margin: 0, width: "100%" }}>
+    <StyledSegment inverted>
       <Flex alignItems="center" height="30px">
-        <Box width={1 / 12}></Box>
-        <Box>
+        <Box width={1 / 12} />
+        <Box width={[1 / 5, "auto"]}>
           <Image
             className="cursorHover"
             size="tiny"
@@ -38,7 +44,7 @@ const Navigation: FC = () => {
           </Menu>
         </Box>
       </Flex>
-    </Segment>
+    </StyledSegment>
   );
 };
 
