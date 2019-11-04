@@ -1,9 +1,10 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import { FC, useMemo } from "react";
-import { useWindowSize } from "react-use";
-import { Container, Grid, Image, Menu, Segment } from "semantic-ui-react";
+import { Grid, Menu, Segment } from "semantic-ui-react";
 import { useRememberState } from "use-remember-state";
+
+import { PortfolioImage, TextSegment } from "../../src/components/Portfolio";
 
 enum PortfolioOptions {
   awesomeTemplates = "Awesome Templates",
@@ -12,32 +13,70 @@ enum PortfolioOptions {
   lalaVERA = "LALA VERA",
 }
 
-const TextSegment: FC = ({ children }) => {
-  const { width } = useWindowSize(1920);
-  return (
-    <Grid.Row>
-      <Segment padded={width > 630 ? "very" : false}>
-        <Container text textAlign="justified">
-          {children}
-        </Container>
-      </Segment>
-    </Grid.Row>
-  );
-};
-
-const PortfolioImage: FC<{ src: string; alt: string }> = ({ src, alt }) => {
-  return (
-    <Grid.Row>
-      <Grid.Column>
-        <Image src={src} alt={alt} />
-      </Grid.Column>
-    </Grid.Row>
-  );
-};
-
 const SinanticaFES: FC = () => {
   return (
     <Grid centered>
+      <TextSegment>
+        <p>
+          <b>Sinantica FES</b> is a private project that consists of a dashboard
+          of real time data coming from a neural network that analyzes cameras
+          pointing to the street, counting the vehicles and identifying them by
+          category
+        </p>
+        <p>
+          More info about this project is available at{" "}
+          <a href="https://www.sinantica.cl/services">
+            https://www.sinantica.cl/services
+          </a>{" "}
+          (website partly developed by me).
+        </p>
+      </TextSegment>
+      <TextSegment>
+        <p>This application works using:</p>
+        <ul>
+          <li>
+            <a href="https://reactjs.org/">React.js</a>
+          </li>
+          <li>
+            <a href="https://nodejs.org/">Node.js</a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/">TypeScript</a>
+          </li>
+          <li>
+            <a href="https://mongodb.com">MongoDB</a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">
+              WebSockets
+            </a>
+          </li>
+        </ul>
+        <p>
+          All the previously mentioned being developed using libraries and
+          frameworks like:
+        </p>
+        <ul>
+          <li>
+            <a href="https://expressjs.com/">Express.js</a>
+          </li>
+          <li>
+            <a href="https://socket.io/">Socket.IO</a>
+          </li>
+          <li>
+            <a href="https://react-redux.js.org/">React Redux</a>
+          </li>
+          <li>
+            <a href="https://mongoosejs.com/">Mongoose</a>
+          </li>
+          <li>
+            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+          </li>
+          <li>
+            <a href="https://apexcharts.com/">ApexCharts</a>
+          </li>
+        </ul>
+      </TextSegment>
       <PortfolioImage
         src="/2019-10/sinanticafes1.png"
         alt="Sinantica FES Screenshot"
@@ -53,6 +92,67 @@ const SinanticaFES: FC = () => {
 const LALATrAC: FC = () => {
   return (
     <Grid centered>
+      <TextSegment>
+        <b>LALA TrAC</b> is an{" "}
+        <a href="https://github.com/LALA-UACh/TrAC">open source project</a>{" "}
+        driven by{" "}
+        <a href="https://www.lalaproject.org/">
+          <b>LALA Project</b>
+        </a>{" "}
+        -{" "}
+        <a href="https://www.uach.cl/">
+          <b>UACh</b>
+        </a>{" "}
+        that aims to help for better understanding of students trajectory.
+      </TextSegment>
+      <TextSegment>
+        <i>
+          Due to the sensitive nature of the data used for this application it's
+          impossible to show deeper funcionality and information.
+        </i>
+      </TextSegment>
+      <TextSegment>
+        <p>This application is in the works using:</p>
+        <ul>
+          <li>
+            <a href="https://reactjs.org/">React.js</a>
+          </li>
+          <li>
+            <a href="https://nodejs.org/">Node.js</a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/">TypeScript</a>
+          </li>
+          <li>
+            <a href="https://www.postgresql.org/">PostgreSQL</a>
+          </li>
+        </ul>
+        <p>
+          All the previously mentioned being developed using libraries and
+          frameworks like:
+        </p>
+        <ul>
+          <li>
+            <a href="https://nextjs.org/">Next.js</a>
+          </li>
+          <li>
+            <a href="https://expressjs.com/">Express.js</a>
+          </li>
+          <li>
+            <a href="https://sequelize.org/">Sequelize</a>
+          </li>
+          <li>
+            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+          </li>
+          <li>
+            <a href="https://d3js.org/">D3.js</a>
+          </li>
+          <li>
+            <a href="https://konvajs.org/">Konva</a> -{" "}
+            <a href="https://konvajs.org/docs/react/">React Konva</a>
+          </li>
+        </ul>
+      </TextSegment>
       <PortfolioImage src="/2019-10/trac1.png" alt="LALA TrAC Screenshot" />
     </Grid>
   );
@@ -87,8 +187,8 @@ const AwesomeTemplates: FC = () => {
 
       <TextSegment>
         <p>
-          This is a personal project, the application offers a{" "}
-          <b>centralized</b> list of programming projects templates, using the{" "}
+          <b>Awesome Templates</b> is a personal project, the application offers
+          a <b>centralized</b> list of programming projects templates, using the{" "}
           <a href="https://developer.github.com/v4/">GitHub API</a> and open for
           the open source community to add templates and improve the app
           functionality.

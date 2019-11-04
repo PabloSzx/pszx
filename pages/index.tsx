@@ -1,5 +1,6 @@
 import { NextPage } from "next";
-import { Header, Icon, Segment } from "semantic-ui-react";
+import Link from "next/link";
+import { Button, Container, Divider, Grid, Header, Icon, Segment } from "semantic-ui-react";
 import styled from "styled-components";
 
 const HeaderCover = styled(Header)`
@@ -32,11 +33,58 @@ const Home: NextPage = () => {
           </HeaderCover>
         </Segment>
       </HomeCover>
-      {/* <HomeCover backgroundImg="/coverimage1.jpg">
-        <Segment size="massive" secondary>
-          This Website is made to show some of some of my work
-        </Segment>
-      </HomeCover> */}
+      <HomeCover backgroundImg="/coverimage1.jpg">
+        <Grid centered divided>
+          <Segment size="massive" secondary>
+            <Grid.Row>
+              <Container text>
+                <Header as="h1" textAlign="center" icon>
+                  <Icon name="code" />
+                  I'm a full-stack web developer and tech enthusiast who focuses
+                  on functionality and specializes on backend.
+                </Header>
+              </Container>
+            </Grid.Row>
+            <Divider hidden />
+            <Divider />
+            <Divider hidden />
+            <Grid.Row>
+              <p>
+                <Link href="/portfolio" passHref>
+                  <Button basic icon labelPosition="left" color="black">
+                    Portfolio
+                    <Icon name="briefcase" />
+                  </Button>
+                </Link>
+              </p>
+              <p>
+                <a href="https://github.com/pabloszx">
+                  <Button basic icon labelPosition="left" color="black">
+                    GitHub Profile
+                    <Icon name="github" />
+                  </Button>
+                </a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/pablo-sáez-parra-73044194">
+                  <Button basic icon labelPosition="left" color="black">
+                    LinkedIn Profile
+                    <Icon name="linkedin" />
+                  </Button>
+                </a>
+              </p>
+              <p>
+                <a href="mailto:pablosaez1995@gmail.com">
+                  <Button basic icon labelPosition="left" color="black">
+                    pablosaez1995@gmail.com
+                    <Icon name="envelope outline" />
+                  </Button>
+                </a>
+              </p>
+            </Grid.Row>
+          </Segment>
+        </Grid>
+      </HomeCover>
     </>
   );
 };
