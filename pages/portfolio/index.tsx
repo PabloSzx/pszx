@@ -1,16 +1,24 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { NextPage } from "next";
 import Head from "next/head";
 import { FC, useMemo } from "react";
 import { Grid, Menu, Segment } from "semantic-ui-react";
 import { useRememberState } from "use-remember-state";
 
-import { PortfolioImage, TextSegment } from "../../src/components/Portfolio";
+import { Heading, Text } from "@chakra-ui/core";
+
+import {
+  PortfolioImage,
+  PortfolioVideo,
+  TextSegment,
+} from "../../src/components/Portfolio";
 
 enum PortfolioOptions {
-  awesomeTemplates = "Awesome Templates",
-  sinanticaFES = "Sinantica FES",
   lalaTrAC = "LALA TrAC",
   lalaVERA = "LALA VERA",
+  sinanticaWeb = "Sinantica Website",
+  sinanticaFES = "Sinantica FES",
+  awesomeTemplates = "Awesome Templates"
 }
 
 const SinanticaFES: FC = () => {
@@ -94,7 +102,7 @@ const LALATrAC: FC = () => {
     <Grid centered>
       <TextSegment>
         <b>LALA TrAC</b> is an{" "}
-        <a href="https://github.com/LALA-UACh/TrAC">open source project</a>{" "}
+        <a href="https://github.com/LALA-UACh/TrAC-v2">open source project</a>{" "}
         driven by{" "}
         <a href="https://www.lalaproject.org/">
           <b>LALA Project</b>
@@ -106,13 +114,13 @@ const LALATrAC: FC = () => {
         that aims to help for better understanding of students trajectory.
       </TextSegment>
       <TextSegment>
-        <i>
-          Due to the sensitive nature of the data used for this application it's
-          impossible to show deeper funcionality and information.
-        </i>
+        It was first designed for program's directors, but right now is in
+        development for an expansion for student's own trajectory understanding
+        and semester planification.
       </TextSegment>
+
       <TextSegment>
-        <p>This application is in the works using:</p>
+        <p>This application is the process of expansion using:</p>
         <ul>
           <li>
             <a href="https://reactjs.org/">React.js</a>
@@ -125,6 +133,9 @@ const LALATrAC: FC = () => {
           </li>
           <li>
             <a href="https://www.postgresql.org/">PostgreSQL</a>
+          </li>
+          <li>
+            <a href="https://graphql.org/">GraphQL</a>
           </li>
         </ul>
         <p>
@@ -139,27 +150,47 @@ const LALATrAC: FC = () => {
             <a href="https://expressjs.com/">Express.js</a>
           </li>
           <li>
-            <a href="https://sequelize.org/">Sequelize</a>
+            <a href="https://knexjs.org/">Knex.js</a>
+          </li>
+          <li>
+            <a href="https://chakra-ui.com/">Chakra UI</a>
           </li>
           <li>
             <a href="https://react.semantic-ui.com/">Semantic UI</a>
           </li>
           <li>
-            <a href="https://d3js.org/">D3.js</a>
+            <a href="https://typegraphql.ml/">TypeGraphQL</a>
           </li>
           <li>
-            <a href="https://konvajs.org/">Konva</a> -{" "}
-            <a href="https://konvajs.org/docs/react/">React Konva</a>
+            <a href="https://github.com/graphql/dataloader">DataLoader</a>
+          </li>
+          <li>
+            <a href="https://www.framer.com/motion/">Framer Motion</a>
           </li>
         </ul>
       </TextSegment>
-      <PortfolioImage src="/2019-10/trac1.png" alt="LALA TrAC Screenshot" />
+      <PortfolioVideo src="/trac_video_1.mp4" />
     </Grid>
   );
 };
 const LALAVera: FC = () => {
   return (
     <Grid centered>
+      <TextSegment>
+        <b>LALA VERA</b> is a project driven by{" "}
+        <a href="https://www.lalaproject.org/">
+          <b>LALA Project</b>
+        </a>{" "}
+        -{" "}
+        <a href="https://www.uach.cl/">
+          <b>UACh</b>
+        </a>{" "}
+        that aims to give better graphic visualizations of surveys created by{" "}
+        <a href="http://bienestarspm.uach.cl/apoyo-al-aprendizaje/">
+          UACh UAEEP
+        </a>
+        .
+      </TextSegment>
       <PortfolioImage src="/2019-10/vera1.png" alt="LALA VERA Screenshot" />
       <PortfolioImage src="/2019-10/vera2.png" alt="LALA VERA Screenshot" />
     </Grid>
@@ -264,12 +295,33 @@ const AwesomeTemplates: FC = () => {
   );
 };
 
+const SinanticaWebsite: FC = () => {
+  return (
+    <Grid centered>
+      <Grid.Row>
+        <TextSegment>
+          <Text fontSize="2em">
+            Public website of <a href="https://sinantica.cl">Sinantica</a>
+          </Text>
+        </TextSegment>
+      </Grid.Row>
+      <Grid.Row>
+        <TextSegment>
+          <Heading textAlign="center">
+            <a href="https://sinantica.cl">https://sinantica.cl</a>
+          </Heading>
+        </TextSegment>
+      </Grid.Row>
+    </Grid>
+  );
+};
+
 const Portfolio: NextPage = () => {
   const [active, setActive] = useRememberState(
     "portfolioMenu",
     PortfolioOptions.awesomeTemplates,
     {
-      SSR: true,
+      SSR: true
     }
   );
 
@@ -289,6 +341,8 @@ const Portfolio: NextPage = () => {
         return <LALAVera />;
       case PortfolioOptions.awesomeTemplates:
         return <AwesomeTemplates />;
+      case PortfolioOptions.sinanticaWeb:
+        return <SinanticaWebsite />;
       default:
         return null;
     }
@@ -302,14 +356,25 @@ const Portfolio: NextPage = () => {
       <Grid padded stackable>
         <Grid.Row>
           <Grid.Column width={3} textAlign="center">
-            <Menu vertical inverted fluid pointing>
+            <Menu vertical inverted fluid secondary>
               {Object.values(PortfolioOptions).map((name, key) => (
                 <MenuItem name={name} key={key} />
               ))}
             </Menu>
           </Grid.Column>
           <Grid.Column width={13}>
-            <Segment inverted>{ActiveItem}</Segment>
+            <Segment inverted>
+              <AnimatePresence>
+                <motion.div
+                  key={active}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0, display: "none" }}
+                >
+                  {ActiveItem}
+                </motion.div>
+              </AnimatePresence>
+            </Segment>
           </Grid.Column>
         </Grid.Row>
       </Grid>

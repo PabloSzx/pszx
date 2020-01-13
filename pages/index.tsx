@@ -1,14 +1,24 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { Button, Container, Divider, Grid, Header, Icon, Segment } from "semantic-ui-react";
+import {
+  Button,
+  Container,
+  Divider,
+  Grid,
+  Header,
+  Icon,
+  Segment,
+} from "semantic-ui-react";
 import styled from "styled-components";
 
-const HeaderCover = styled(Header)`
-  font-size: 5vw;
-  @media only screen and (max-width: 650px) {
-    font-size: 2.5em;
-  }
-`;
+import { Box, Heading } from "@chakra-ui/core";
+
+// const HeaderCover = styled(Header)`
+//   font-size: 5vw;
+//   @media only screen and (max-width: 650px) {
+//     font-size: 2.5em;
+//   }
+// `;
 
 const HomeCover = styled.div<{ backgroundImg: string; navMargin?: boolean }>`
   width: 100%;
@@ -27,13 +37,27 @@ const Home: NextPage = () => {
     <>
       <HomeCover backgroundImg="/coverimg2.jpeg" navMargin>
         <Segment secondary circular>
-          <HeaderCover as="h1" inverted>
-            <Icon name="hand peace outline" />
-            Hi, I'm Pablo Sáez
-          </HeaderCover>
+          <Heading as="h1" fontSize={["5vw", "2.5em"]}>
+            <>
+              <Icon name="hand peace outline" />
+              Hi, I'm Pablo Sáez
+            </>
+          </Heading>
         </Segment>
       </HomeCover>
-      <HomeCover backgroundImg="/coverimage1.jpg">
+
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        backgroundImage="url(/coverimage1.jpg)"
+        backgroundSize="cover"
+        backgroundPosition="fixed"
+        width="100%"
+        minHeight="100vh"
+        pt="1em"
+        pb="1em"
+      >
         <Grid centered divided>
           <Segment size="massive" secondary>
             <Grid.Row>
@@ -41,7 +65,7 @@ const Home: NextPage = () => {
                 <Header as="h1" textAlign="center" icon>
                   <Icon name="code" />
                   I'm a full-stack web developer and tech enthusiast who focuses
-                  on functionality and specializes on backend.
+                  on dynamic functionality.
                 </Header>
               </Container>
             </Grid.Row>
@@ -74,6 +98,14 @@ const Home: NextPage = () => {
                 </a>
               </p>
               <p>
+                <a href="https://twitter.com/PabloSz_">
+                  <Button basic icon labelPosition="left" color="black">
+                    Twitter Profile
+                    <Icon name="twitter" />
+                  </Button>
+                </a>
+              </p>
+              <p>
                 <a href="mailto:pablosaez1995@gmail.com">
                   <Button basic icon labelPosition="left" color="black">
                     pablosaez1995@gmail.com
@@ -84,7 +116,7 @@ const Home: NextPage = () => {
             </Grid.Row>
           </Segment>
         </Grid>
-      </HomeCover>
+      </Box>
     </>
   );
 };
