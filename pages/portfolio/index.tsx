@@ -35,8 +35,8 @@ const SinanticaFES: FC = () => {
           More info about this project is available at{" "}
           <a href="https://www.sinantica.cl/services">
             https://www.sinantica.cl/services
-          </a>{" "}
-          (website partly developed by me).
+          </a>
+          .
         </p>
       </TextSegment>
       <TextSegment>
@@ -114,9 +114,9 @@ const LALATrAC: FC = () => {
         that aims to help for better understanding of students trajectory.
       </TextSegment>
       <TextSegment>
-        It was first designed for program's directors, but right now is in
-        development for an expansion for student's own trajectory understanding
-        and semester planification.
+        It was first designed for program's directors usage, but right now is in
+        development for an expansion for student's own university career
+        trajectory and semester planning.
       </TextSegment>
 
       <TextSegment>
