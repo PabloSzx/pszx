@@ -11,7 +11,7 @@ import {
 } from "semantic-ui-react";
 import styled from "styled-components";
 
-import { Box, Heading } from "@chakra-ui/core";
+import { Box, Flex, Heading, Stack } from "@chakra-ui/core";
 
 // const HeaderCover = styled(Header)`
 //   font-size: 5vw;
@@ -34,8 +34,16 @@ const HomeCover = styled.div<{ backgroundImg: string; navMargin?: boolean }>`
 
 const Home: NextPage = () => {
   return (
-    <>
-      <HomeCover backgroundImg="/coverimg2.jpeg" navMargin>
+    <Stack>
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        backgroundImage="url(/coverimg2.jpeg)"
+        minHeight="calc(100vh - 72px)"
+        backgroundSize="cover"
+        backgroundPosition="fixed"
+        width="100%"
+      >
         <Segment secondary circular>
           <Heading as="h1" fontSize={["5vw", "2.5em"]}>
             <>
@@ -44,7 +52,7 @@ const Home: NextPage = () => {
             </>
           </Heading>
         </Segment>
-      </HomeCover>
+      </Flex>
 
       <Box
         display="flex"
@@ -53,71 +61,63 @@ const Home: NextPage = () => {
         backgroundImage="url(/coverimage1.jpg)"
         backgroundSize="cover"
         backgroundPosition="fixed"
-        width="100%"
-        minHeight="100vh"
         pt="1em"
         pb="1em"
       >
-        <Grid centered divided>
-          <Segment size="massive" secondary>
-            <Grid.Row>
-              <Container text>
-                <Header as="h1" textAlign="center" icon>
-                  <Icon name="code" />
-                  I'm a full-stack web developer and tech enthusiast who focuses
-                  on dynamic functionality.
-                </Header>
-              </Container>
-            </Grid.Row>
-            <Divider hidden />
-            <Divider />
-            <Divider hidden />
-            <Grid.Row>
-              <p>
-                <Link href="/portfolio" passHref>
-                  <Button basic icon labelPosition="left" color="black">
-                    Portfolio
-                    <Icon name="briefcase" />
-                  </Button>
-                </Link>
-              </p>
-              <p>
-                <a href="https://github.com/pabloszx">
-                  <Button basic icon labelPosition="left" color="black">
-                    GitHub Profile
-                    <Icon name="github" />
-                  </Button>
-                </a>
-              </p>
-              <p>
-                <a href="https://www.linkedin.com/in/pablo-sáez-parra-73044194">
-                  <Button basic icon labelPosition="left" color="black">
-                    LinkedIn Profile
-                    <Icon name="linkedin" />
-                  </Button>
-                </a>
-              </p>
-              <p>
-                <a href="https://twitter.com/PabloSz_">
-                  <Button basic icon labelPosition="left" color="black">
-                    Twitter Profile
-                    <Icon name="twitter" />
-                  </Button>
-                </a>
-              </p>
-              <p>
-                <a href="mailto:pablosaez1995@gmail.com">
-                  <Button basic icon labelPosition="left" color="black">
-                    pablosaez1995@gmail.com
-                    <Icon name="envelope outline" />
-                  </Button>
-                </a>
-              </p>
-            </Grid.Row>
-          </Segment>
-        </Grid>
+        <Segment size="massive" secondary>
+          <Container text>
+            <Header as="h1" textAlign="center" icon>
+              <Icon name="code" />
+              I'm a full-stack web developer and tech enthusiast who focuses on
+              dynamic functionality.
+            </Header>
+          </Container>
+          <Divider />
+          <Stack justifyContent="center" alignItems="center">
+            <p>
+              <Link href="/portfolio" passHref>
+                <Button basic icon labelPosition="left" color="black">
+                  Portfolio
+                  <Icon name="briefcase" />
+                </Button>
+              </Link>
+            </p>
+            <p>
+              <a href="https://github.com/pabloszx">
+                <Button basic icon labelPosition="left" color="black">
+                  GitHub Profile
+                  <Icon name="github" />
+                </Button>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/pablo-sáez-parra-73044194">
+                <Button basic icon labelPosition="left" color="black">
+                  LinkedIn Profile
+                  <Icon name="linkedin" />
+                </Button>
+              </a>
+            </p>
+            <p>
+              <a href="https://twitter.com/PabloSz_">
+                <Button basic icon labelPosition="left" color="black">
+                  Twitter Profile
+                  <Icon name="twitter" />
+                </Button>
+              </a>
+            </p>
+            <p>
+              <a href="mailto:pablosaez1995@gmail.com">
+                <Button basic icon labelPosition="left" color="black">
+                  pablosaez1995@gmail.com
+                  <Icon name="envelope outline" />
+                </Button>
+              </a>
+            </p>
+          </Stack>
+        </Segment>
       </Box>
-    </>
+    </Stack>
   );
 };
 

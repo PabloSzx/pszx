@@ -5,7 +5,7 @@ import { FC, useMemo } from "react";
 import { Grid, Menu, Segment } from "semantic-ui-react";
 import { useRememberState } from "use-remember-state";
 
-import { Heading, Text } from "@chakra-ui/core";
+import { Box, Heading, Stack, Text } from "@chakra-ui/core";
 
 import {
   PortfolioImage,
@@ -120,7 +120,7 @@ const LALATrAC: FC = () => {
       </TextSegment>
 
       <TextSegment>
-        <p>This application is the process of expansion using:</p>
+        <p>This application is in development using:</p>
         <ul>
           <li>
             <a href="https://reactjs.org/">React.js</a>
@@ -187,7 +187,7 @@ const LALAVera: FC = () => {
         </a>{" "}
         that aims to give better graphic visualizations of surveys created by{" "}
         <a href="http://bienestarspm.uach.cl/apoyo-al-aprendizaje/">
-          UACh UAEEP
+          UAEEP UACh
         </a>
         .
       </TextSegment>
@@ -266,10 +266,7 @@ const AwesomeTemplates: FC = () => {
             <a href="https://expressjs.com/">Express.js</a>
           </li>
           <li>
-            <a href="https://www.apollographql.com/">Apollo GraphQL</a>{" "}
-            <i>
-              (<b>client</b> and <b>API</b> side)
-            </i>
+            <a href="https://www.apollographql.com/">Apollo GraphQL</a>
           </li>
           <li>
             <a href="https://typegraphql.ml/">TypeGraphQL</a>
@@ -300,13 +297,9 @@ const SinanticaWebsite: FC = () => {
     <Grid centered>
       <Grid.Row>
         <TextSegment>
-          <Text fontSize="2em">
-            Public website of <a href="https://sinantica.cl">Sinantica</a>
+          <Text>
+            Public website of <b>Sinantica</b>
           </Text>
-        </TextSegment>
-      </Grid.Row>
-      <Grid.Row>
-        <TextSegment>
           <Heading textAlign="center">
             <a href="https://sinantica.cl">https://sinantica.cl</a>
           </Heading>
@@ -353,31 +346,29 @@ const Portfolio: NextPage = () => {
       <Head key={1}>
         <title>Portfolio</title>
       </Head>
-      <Grid padded stackable>
-        <Grid.Row>
-          <Grid.Column width={3} textAlign="center">
-            <Menu vertical inverted fluid secondary>
-              {Object.values(PortfolioOptions).map((name, key) => (
-                <MenuItem name={name} key={key} />
-              ))}
-            </Menu>
-          </Grid.Column>
-          <Grid.Column width={13}>
-            <Segment inverted>
-              <AnimatePresence>
-                <motion.div
-                  key={active}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0, display: "none" }}
-                >
-                  {ActiveItem}
-                </motion.div>
-              </AnimatePresence>
-            </Segment>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+      <Stack justifyContent="center" alignItems="center">
+        <Box textAlign="center">
+          <Menu vertical inverted fluid>
+            {Object.values(PortfolioOptions).map((name, key) => (
+              <MenuItem name={name} key={key} />
+            ))}
+          </Menu>
+        </Box>
+        <Box>
+          <Segment inverted>
+            <AnimatePresence>
+              <motion.div
+                key={active}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0, display: "none" }}
+              >
+                {ActiveItem}
+              </motion.div>
+            </AnimatePresence>
+          </Segment>
+        </Box>
+      </Stack>
     </>
   );
 };

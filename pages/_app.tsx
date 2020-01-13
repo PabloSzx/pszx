@@ -3,7 +3,7 @@ import Head from "next/head";
 import Router from "next/router";
 import NProgress from "nprogress";
 
-import { theme, ThemeProvider } from "@chakra-ui/core";
+import { Box, theme, ThemeProvider } from "@chakra-ui/core";
 
 import Navigation from "../src/components/Navigation";
 
@@ -21,7 +21,9 @@ class MyApp extends App {
           <title>PabloSz</title>
         </Head>
         <Navigation />
-        <Component {...pageProps} />
+        <Box>
+          <Component {...pageProps} />
+        </Box>
       </ThemeProvider>
     );
   }

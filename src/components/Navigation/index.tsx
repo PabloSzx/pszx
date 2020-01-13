@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FC, FunctionComponent } from "react";
-import { Box, Flex } from "reflexbox";
 import { Image, Menu, Segment } from "semantic-ui-react";
 import styled from "styled-components";
+
+import { Box, Flex } from "@chakra-ui/core";
 
 const StyledSegment = styled(Segment)`
   margin: 0;
@@ -15,7 +16,7 @@ const Navigation: FC = () => {
 
   const MenuItem: FunctionComponent<{ pathname: string; name: string }> = ({
     pathname,
-    name,
+    name
   }) => (
     <Link href={pathname}>
       <Menu.Item name={pathname} active={pathname === routerPathname}>
