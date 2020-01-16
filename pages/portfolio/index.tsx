@@ -169,7 +169,7 @@ const LALATrAC: FC = () => {
           </li>
         </ul>
       </TextSegment>
-      <PortfolioVideo src="/trac_video_1.mp4" />
+      <PortfolioVideo src="/trac_video_2.mp4" />
     </Grid>
   );
 };
