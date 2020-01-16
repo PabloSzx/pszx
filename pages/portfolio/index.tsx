@@ -18,7 +18,7 @@ enum PortfolioOptions {
   lalaVERA = "LALA VERA",
   sinanticaWeb = "Sinantica Website",
   sinanticaFES = "Sinantica FES",
-  awesomeTemplates = "Awesome Templates"
+  awesomeTemplates = "Awesome Templates",
 }
 
 const SinanticaFES: FC = () => {
@@ -191,6 +191,48 @@ const LALAVera: FC = () => {
         </a>
         .
       </TextSegment>
+      <TextSegment>
+        <p>This application was made using:</p>
+        <ul>
+          <li>
+            <a href="https://reactjs.org/">React.js</a>
+          </li>
+          <li>
+            <a href="https://nodejs.org/">Node.js</a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/">TypeScript</a>
+          </li>
+          <li>
+            <a href="https://www.postgresql.org/">PostgreSQL</a>
+          </li>
+        </ul>
+        <p>
+          All the previously mentioned being developed using libraries and
+          frameworks like:
+        </p>
+        <ul>
+          <li>
+            <a href="https://nextjs.org/">Next.js</a>
+          </li>
+          <li>
+            <a href="https://expressjs.com/">Express.js</a>
+          </li>
+          <li>
+            <a href="https://github.com/konvajs/react-konva">React Konva</a>
+          </li>
+          <li>
+            <a href="https://sequelize.org/">Sequelize</a>
+          </li>
+          <li>
+            <a href="https://github.com/axios/axios/">Axios</a>
+          </li>
+          <li>
+            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+          </li>
+        </ul>
+      </TextSegment>
+
       <PortfolioImage src="/2019-10/vera1.png" alt="LALA VERA Screenshot" />
       <PortfolioImage src="/2019-10/vera2.png" alt="LALA VERA Screenshot" />
     </Grid>
@@ -314,7 +356,7 @@ const Portfolio: NextPage = () => {
     "portfolioMenu",
     PortfolioOptions.awesomeTemplates,
     {
-      SSR: true
+      SSR: true,
     }
   );
 
