@@ -8,8 +8,8 @@ export const TextSegment: FC = ({ children }) => {
   const { width } = useWindowSize(1920);
   return (
     <Grid.Row>
-      <Box>
-        <Segment padded={width > 630 ? "very" : false}>
+      <Box p={1}>
+        <Segment padded={width > 630 ? (width > 800 ? "very" : true) : false}>
           <Container text textAlign="justified">
             {children}
           </Container>

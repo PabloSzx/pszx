@@ -14,24 +14,25 @@
     "babel-plugin-styled-components": "^1.10.6",
     "emotion-theming": "^10.0.27",
     "framer-motion": "^1.7.0",
-    "next": "9.1.7",
+    "next": "9.2.0",
     "nprogress": "^0.2.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-pose": "^4.0.10",
-    "react-use": "^13.15.0",
-    "reflexbox": "^4.0.6",
+    "react-use": "^13.17.0",
     "semantic-ui-react": "^0.88.2",
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.0.0",
     "use-remember-state": "^1.1.2"
   },
   "devDependencies": {
-    "@types/node": "^13.1.6",
+    "@types/node": "^13.1.7",
     "@types/nprogress": "^0.2.0",
     "@types/react": "16.9.17",
     "@types/react-dom": "16.9.4",
-    "@types/reflexbox": "^4.0.0",
     "@types/styled-components": "^4.4.2",
     "typescript": "^3.7.4"
+  },
+  "resolutions": {
+    "serialize-javascript": "2.1.2"
   }
 }
