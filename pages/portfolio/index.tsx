@@ -390,7 +390,7 @@ const Portfolio: NextPage = () => {
       </Head>
       <Stack justifyContent="center" alignItems="center">
         <Box textAlign="center">
-          <Menu inverted fluid>
+          <Menu inverted fluid stackable>
             {Object.values(PortfolioOptions).map((name, key) => (
               <MenuItem name={name} key={key} />
             ))}
