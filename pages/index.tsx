@@ -45,7 +45,7 @@ const Home: NextPage = () => {
         width="100%"
       >
         <Segment secondary circular>
-          <Heading as="h1" fontSize={["5vw", "2.5em"]}>
+          <Heading as="h1" fontSize={["8vw", "2.5em"]}>
             <>
               <Icon name="hand peace outline" />
               Hi, I'm Pablo Sáez
