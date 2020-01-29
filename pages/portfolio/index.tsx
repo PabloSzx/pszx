@@ -18,6 +18,7 @@ enum PortfolioOptions {
   lalaVERA = "LALA VERA",
   sinanticaWeb = "Sinantica Website",
   sinanticaFES = "Sinantica FES",
+  e_ncendio = "e-ncendio",
   awesomeTemplates = "Awesome Templates",
 }
 
@@ -169,7 +170,7 @@ const LALATrAC: FC = () => {
           </li>
         </ul>
       </TextSegment>
-      <PortfolioVideo src="/trac_video_2.mp4" />
+      <PortfolioVideo src="/trac_video_3.mp4" />
     </Grid>
   );
 };
@@ -238,6 +239,96 @@ const LALAVera: FC = () => {
     </Grid>
   );
 };
+
+const E_ncendio: FC = () => {
+  return (
+    <Grid centered>
+      <TextSegment>
+        <b>e-ncendio</b> is an{" "}
+        <a href="https://github.com/pabloszx/fire-uach">open source project</a>{" "}
+        driven by <b>FireSeS</b> -{" "}
+        <a href="https://www.uach.cl/">
+          <b>UACh</b>
+        </a>{" "}
+        that aims to learn and research about fires perception interactively
+        through games and image sharing.
+      </TextSegment>
+
+      <TextSegment>
+        More info available{" "}
+        <a href="https://diario.uach.cl/nucleo-fireses-lanza-aplicacion-para-investigar-sobre-incendios-jugando/">
+          here{" "}
+        </a>
+        <i>(university report in spanish).</i>
+        <br />
+        <br />
+        This application is publicly available here:{" "}
+        <a href="https://e-ncendio.inf.uach.cl/">
+          <b>https://e-ncendio.inf.uach.cl/</b>
+        </a>
+      </TextSegment>
+
+      <TextSegment>
+        <p>This application is mobile focused and was made using:</p>
+        <ul>
+          <li>
+            <a href="https://reactjs.org/">React.js</a>
+          </li>
+          <li>
+            <a href="https://nodejs.org/">Node.js</a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/">TypeScript</a>
+          </li>
+          <li>
+            <a href="https://mongodb.com">MongoDB</a>
+          </li>
+          <li>
+            <a href="https://graphql.org/">GraphQL</a>
+          </li>
+        </ul>
+        <p>
+          All the previously mentioned being developed using libraries and
+          frameworks like:
+        </p>
+        <ul>
+          <li>
+            <a href="https://nextjs.org/">Next.js</a>
+          </li>
+          <li>
+            <a href="https://expressjs.com/">Express.js</a>
+          </li>
+          <li>
+            <a href="https://www.apollographql.com/">Apollo GraphQL</a>
+          </li>
+          <li>
+            <a href="https://typegoose.github.io/typegoose/">Typegoose</a>
+          </li>
+          <li>
+            <a href="https://mongoosejs.com/">Mongoose</a>
+          </li>
+          <li>
+            <a href="https://chakra-ui.com/">Chakra UI</a>
+          </li>
+          <li>
+            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+          </li>
+          <li>
+            <a href="https://typegraphql.ml/">TypeGraphQL</a>
+          </li>
+          <li>
+            <a href="https://www.framer.com/motion/">Framer Motion</a>
+          </li>
+          <li>
+            <a href="https://github.com/lovell/sharp">sharp</a>
+          </li>
+        </ul>
+      </TextSegment>
+      <PortfolioVideo src="/e_ncendio_video.mp4" />
+    </Grid>
+  );
+};
+
 const AwesomeTemplates: FC = () => {
   return (
     <Grid centered>
@@ -378,6 +469,8 @@ const Portfolio: NextPage = () => {
         return <AwesomeTemplates />;
       case PortfolioOptions.sinanticaWeb:
         return <SinanticaWebsite />;
+      case PortfolioOptions.e_ncendio:
+        return <E_ncendio />;
       default:
         return null;
     }
