@@ -8,7 +8,11 @@ export const PortfolioImage: FC<{ src: string; alt: string }> = ({
   return (
     <Grid.Row>
       <Grid.Column>
-        <Image src={src} alt={alt} />
+        <Image
+          style={{ paddingLeft: "10px", paddingRight: "10px" }}
+          src={src}
+          alt={alt}
+        />
       </Grid.Column>
     </Grid.Row>
   );

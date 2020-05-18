@@ -20,6 +20,7 @@ enum PortfolioOptions {
   sinanticaFES = "Sinantica FES",
   e_ncendio = "e-ncendio",
   awesomeTemplates = "Awesome Templates",
+  communityUach = "Practice Community UACh",
 }
 
 const SinanticaFES: FC = () => {
@@ -34,7 +35,7 @@ const SinanticaFES: FC = () => {
         </p>
         <p>
           More info about this project is available at{" "}
-          <a href="https://www.sinantica.cl/services">
+          <a target="_blank" href="https://www.sinantica.cl/services">
             https://www.sinantica.cl/services
           </a>
           .
@@ -44,19 +45,30 @@ const SinanticaFES: FC = () => {
         <p>This application works using:</p>
         <ul>
           <li>
-            <a href="https://reactjs.org/">React.js</a>
+            <a target="_blank" href="https://reactjs.org/">
+              React.js
+            </a>
           </li>
           <li>
-            <a href="https://nodejs.org/">Node.js</a>
+            <a target="_blank" href="https://nodejs.org/">
+              Node.js
+            </a>
           </li>
           <li>
-            <a href="https://www.typescriptlang.org/">TypeScript</a>
+            <a target="_blank" href="https://www.typescriptlang.org/">
+              TypeScript
+            </a>
           </li>
           <li>
-            <a href="https://mongodb.com">MongoDB</a>
+            <a target="_blank" href="https://mongodb.com">
+              MongoDB
+            </a>
           </li>
           <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+            >
               WebSockets
             </a>
           </li>
@@ -67,22 +79,34 @@ const SinanticaFES: FC = () => {
         </p>
         <ul>
           <li>
-            <a href="https://expressjs.com/">Express.js</a>
+            <a target="_blank" href="https://expressjs.com/">
+              Express.js
+            </a>
           </li>
           <li>
-            <a href="https://socket.io/">Socket.IO</a>
+            <a target="_blank" href="https://socket.io/">
+              Socket.IO
+            </a>
           </li>
           <li>
-            <a href="https://react-redux.js.org/">React Redux</a>
+            <a target="_blank" href="https://react-redux.js.org/">
+              React Redux
+            </a>
           </li>
           <li>
-            <a href="https://mongoosejs.com/">Mongoose</a>
+            <a target="_blank" href="https://mongoosejs.com/">
+              Mongoose
+            </a>
           </li>
           <li>
-            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+            <a target="_blank" href="https://react.semantic-ui.com/">
+              Semantic UI
+            </a>
           </li>
           <li>
-            <a href="https://apexcharts.com/">ApexCharts</a>
+            <a target="_blank" href="https://apexcharts.com/">
+              ApexCharts
+            </a>
           </li>
         </ul>
       </TextSegment>
@@ -103,13 +127,15 @@ const LALATrAC: FC = () => {
     <Grid centered>
       <TextSegment>
         <b>LALA TrAC</b> is an{" "}
-        <a href="https://github.com/LALA-UACh/TrAC-v2">open source project</a>{" "}
+        <a target="_blank" href="https://github.com/LALA-UACh/TrAC-v2">
+          open source project
+        </a>{" "}
         driven by{" "}
-        <a href="https://www.lalaproject.org/">
+        <a target="_blank" href="https://www.lalaproject.org/">
           <b>LALA Project</b>
         </a>{" "}
         -{" "}
-        <a href="https://www.uach.cl/">
+        <a target="_blank" href="https://www.uach.cl/">
           <b>UACh</b>
         </a>{" "}
         that aims to help for better understanding of students trajectory.
@@ -124,19 +150,29 @@ const LALATrAC: FC = () => {
         <p>This application is in development using:</p>
         <ul>
           <li>
-            <a href="https://reactjs.org/">React.js</a>
+            <a target="_blank" href="https://reactjs.org/">
+              React.js
+            </a>
           </li>
           <li>
-            <a href="https://nodejs.org/">Node.js</a>
+            <a target="_blank" href="https://nodejs.org/">
+              Node.js
+            </a>
           </li>
           <li>
-            <a href="https://www.typescriptlang.org/">TypeScript</a>
+            <a target="_blank" href="https://www.typescriptlang.org/">
+              TypeScript
+            </a>
           </li>
           <li>
-            <a href="https://www.postgresql.org/">PostgreSQL</a>
+            <a target="_blank" href="https://www.postgresql.org/">
+              PostgreSQL
+            </a>
           </li>
           <li>
-            <a href="https://graphql.org/">GraphQL</a>
+            <a target="_blank" href="https://graphql.org/">
+              GraphQL
+            </a>
           </li>
         </ul>
         <p>
@@ -145,28 +181,44 @@ const LALATrAC: FC = () => {
         </p>
         <ul>
           <li>
-            <a href="https://nextjs.org/">Next.js</a>
+            <a target="_blank" href="https://nextjs.org/">
+              Next.js
+            </a>
           </li>
           <li>
-            <a href="https://expressjs.com/">Express.js</a>
+            <a target="_blank" href="https://expressjs.com/">
+              Express.js
+            </a>
           </li>
           <li>
-            <a href="https://knexjs.org/">Knex.js</a>
+            <a target="_blank" href="https://knexjs.org/">
+              Knex.js
+            </a>
           </li>
           <li>
-            <a href="https://chakra-ui.com/">Chakra UI</a>
+            <a target="_blank" href="https://chakra-ui.com/">
+              Chakra UI
+            </a>
           </li>
           <li>
-            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+            <a target="_blank" href="https://react.semantic-ui.com/">
+              Semantic UI
+            </a>
           </li>
           <li>
-            <a href="https://typegraphql.ml/">TypeGraphQL</a>
+            <a target="_blank" href="https://typegraphql.ml/">
+              TypeGraphQL
+            </a>
           </li>
           <li>
-            <a href="https://github.com/graphql/dataloader">DataLoader</a>
+            <a target="_blank" href="https://github.com/graphql/dataloader">
+              DataLoader
+            </a>
           </li>
           <li>
-            <a href="https://www.framer.com/motion/">Framer Motion</a>
+            <a target="_blank" href="https://www.framer.com/motion/">
+              Framer Motion
+            </a>
           </li>
         </ul>
       </TextSegment>
@@ -179,15 +231,18 @@ const LALAVera: FC = () => {
     <Grid centered>
       <TextSegment>
         <b>LALA VERA</b> is a project driven by{" "}
-        <a href="https://www.lalaproject.org/">
+        <a target="_blank" href="https://www.lalaproject.org/">
           <b>LALA Project</b>
         </a>{" "}
         -{" "}
-        <a href="https://www.uach.cl/">
+        <a target="_blank" href="https://www.uach.cl/">
           <b>UACh</b>
         </a>{" "}
         that aims to give better graphic visualizations of surveys created by{" "}
-        <a href="http://bienestarspm.uach.cl/apoyo-al-aprendizaje/">
+        <a
+          target="_blank"
+          href="http://bienestarspm.uach.cl/apoyo-al-aprendizaje/"
+        >
           UAEEP UACh
         </a>
         .
@@ -196,16 +251,24 @@ const LALAVera: FC = () => {
         <p>This application was made using:</p>
         <ul>
           <li>
-            <a href="https://reactjs.org/">React.js</a>
+            <a target="_blank" href="https://reactjs.org/">
+              React.js
+            </a>
           </li>
           <li>
-            <a href="https://nodejs.org/">Node.js</a>
+            <a target="_blank" href="https://nodejs.org/">
+              Node.js
+            </a>
           </li>
           <li>
-            <a href="https://www.typescriptlang.org/">TypeScript</a>
+            <a target="_blank" href="https://www.typescriptlang.org/">
+              TypeScript
+            </a>
           </li>
           <li>
-            <a href="https://www.postgresql.org/">PostgreSQL</a>
+            <a target="_blank" href="https://www.postgresql.org/">
+              PostgreSQL
+            </a>
           </li>
         </ul>
         <p>
@@ -214,22 +277,34 @@ const LALAVera: FC = () => {
         </p>
         <ul>
           <li>
-            <a href="https://nextjs.org/">Next.js</a>
+            <a target="_blank" href="https://nextjs.org/">
+              Next.js
+            </a>
           </li>
           <li>
-            <a href="https://expressjs.com/">Express.js</a>
+            <a target="_blank" href="https://expressjs.com/">
+              Express.js
+            </a>
           </li>
           <li>
-            <a href="https://github.com/konvajs/react-konva">React Konva</a>
+            <a target="_blank" href="https://github.com/konvajs/react-konva">
+              React Konva
+            </a>
           </li>
           <li>
-            <a href="https://sequelize.org/">Sequelize</a>
+            <a target="_blank" href="https://sequelize.org/">
+              Sequelize
+            </a>
           </li>
           <li>
-            <a href="https://github.com/axios/axios/">Axios</a>
+            <a target="_blank" href="https://github.com/axios/axios/">
+              Axios
+            </a>
           </li>
           <li>
-            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+            <a target="_blank" href="https://react.semantic-ui.com/">
+              Semantic UI
+            </a>
           </li>
         </ul>
       </TextSegment>
@@ -245,9 +320,11 @@ const E_ncendio: FC = () => {
     <Grid centered>
       <TextSegment>
         <b>e-ncendio</b> is an{" "}
-        <a href="https://github.com/pabloszx/fire-uach">open source project</a>{" "}
+        <a target="_blank" href="https://github.com/pabloszx/fire-uach">
+          open source project
+        </a>{" "}
         driven by <b>FireSeS</b> -{" "}
-        <a href="https://www.uach.cl/">
+        <a target="_blank" href="https://www.uach.cl/">
           <b>UACh</b>
         </a>{" "}
         that aims to learn and research about fires perception interactively
@@ -256,14 +333,17 @@ const E_ncendio: FC = () => {
 
       <TextSegment>
         More info available{" "}
-        <a href="https://diario.uach.cl/nucleo-fireses-lanza-aplicacion-para-investigar-sobre-incendios-jugando/">
+        <a
+          target="_blank"
+          href="https://diario.uach.cl/nucleo-fireses-lanza-aplicacion-para-investigar-sobre-incendios-jugando/"
+        >
           here{" "}
         </a>
         <i>(university report in spanish).</i>
         <br />
         <br />
         This application is publicly available here:{" "}
-        <a href="https://e-ncendio.inf.uach.cl/">
+        <a target="_blank" href="https://e-ncendio.inf.uach.cl/">
           <b>https://e-ncendio.inf.uach.cl/</b>
         </a>
       </TextSegment>
@@ -272,19 +352,29 @@ const E_ncendio: FC = () => {
         <p>This application is mobile focused and was made using:</p>
         <ul>
           <li>
-            <a href="https://reactjs.org/">React.js</a>
+            <a target="_blank" href="https://reactjs.org/">
+              React.js
+            </a>
           </li>
           <li>
-            <a href="https://nodejs.org/">Node.js</a>
+            <a target="_blank" href="https://nodejs.org/">
+              Node.js
+            </a>
           </li>
           <li>
-            <a href="https://www.typescriptlang.org/">TypeScript</a>
+            <a target="_blank" href="https://www.typescriptlang.org/">
+              TypeScript
+            </a>
           </li>
           <li>
-            <a href="https://mongodb.com">MongoDB</a>
+            <a target="_blank" href="https://mongodb.com">
+              MongoDB
+            </a>
           </li>
           <li>
-            <a href="https://graphql.org/">GraphQL</a>
+            <a target="_blank" href="https://graphql.org/">
+              GraphQL
+            </a>
           </li>
         </ul>
         <p>
@@ -293,38 +383,181 @@ const E_ncendio: FC = () => {
         </p>
         <ul>
           <li>
-            <a href="https://nextjs.org/">Next.js</a>
+            <a target="_blank" href="https://nextjs.org/">
+              Next.js
+            </a>
           </li>
           <li>
-            <a href="https://expressjs.com/">Express.js</a>
+            <a target="_blank" href="https://expressjs.com/">
+              Express.js
+            </a>
           </li>
           <li>
-            <a href="https://www.apollographql.com/">Apollo GraphQL</a>
+            <a target="_blank" href="https://www.apollographql.com/">
+              Apollo GraphQL
+            </a>
           </li>
           <li>
-            <a href="https://typegoose.github.io/typegoose/">Typegoose</a>
+            <a target="_blank" href="https://typegoose.github.io/typegoose/">
+              Typegoose
+            </a>
           </li>
           <li>
-            <a href="https://mongoosejs.com/">Mongoose</a>
+            <a target="_blank" href="https://mongoosejs.com/">
+              Mongoose
+            </a>
           </li>
           <li>
-            <a href="https://chakra-ui.com/">Chakra UI</a>
+            <a target="_blank" href="https://chakra-ui.com/">
+              Chakra UI
+            </a>
           </li>
           <li>
-            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+            <a target="_blank" href="https://react.semantic-ui.com/">
+              Semantic UI
+            </a>
           </li>
           <li>
-            <a href="https://typegraphql.ml/">TypeGraphQL</a>
+            <a target="_blank" href="https://typegraphql.ml/">
+              TypeGraphQL
+            </a>
           </li>
           <li>
-            <a href="https://www.framer.com/motion/">Framer Motion</a>
+            <a target="_blank" href="https://www.framer.com/motion/">
+              Framer Motion
+            </a>
           </li>
           <li>
-            <a href="https://github.com/lovell/sharp">sharp</a>
+            <a target="_blank" href="https://github.com/lovell/sharp">
+              sharp
+            </a>
           </li>
         </ul>
       </TextSegment>
       <PortfolioVideo src="/e_ncendio_video.mp4" />
+    </Grid>
+  );
+};
+
+const CommunityPracticeUACh: FC = () => {
+  return (
+    <Grid centered>
+      <Grid.Row>
+        <TextSegment>
+          <p>
+            Practice Community UACh (Comunidades de práctica UACh in{" "}
+            <b>Spanish</b>) is a website with Blog functionality included, using
+            a self implemented CMS (Content Management System).
+          </p>
+          <p>Following a Serverless architecture.</p>
+          <p>
+            Publicly available at{" "}
+            <b>
+              <a target="_blank" href="https://comunidades.inf.uach.cl">
+                https://comunidades.inf.uach.cl
+              </a>
+            </b>
+          </p>
+
+          <p>
+            This project is open source, available here{" "}
+            <a
+              target="_blank"
+              href="https://github.com/PabloSzx/Innov-UACh-Blog"
+            >
+              https://github.com/PabloSzx/Innov-UACh-Blog
+            </a>
+          </p>
+        </TextSegment>
+      </Grid.Row>
+      <Grid.Row>
+        <TextSegment>
+          <p>This website + CMS was made using:</p>
+          <ul>
+            <li>
+              <a target="_blank" href="https://reactjs.org/">
+                React.js
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://nodejs.org/">
+                Node.js
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.typescriptlang.org/">
+                TypeScript
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.postgresql.org/">
+                MongoDB
+              </a>
+            </li>
+          </ul>
+          <p>
+            All the previously mentioned being developed using libraries and
+            frameworks like:
+          </p>
+          <ul>
+            <li>
+              <a target="_blank" href="https://nextjs.org/">
+                Next.js
+              </a>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/apollographql/apollo-server"
+              >
+                Apollo Server GraphQL
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://mongoosejs.com/">
+                Mongoose
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://chakra-ui.com/">
+                Chakra UI
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/samdenty/gqless">
+                gqless
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/PabloSzx/gqless-hooks"
+              >
+                gqless-hooks (made by myself)
+              </a>
+            </li>
+          </ul>
+        </TextSegment>
+      </Grid.Row>
+
+      <PortfolioImage
+        src="/comunidades.png"
+        alt="Screenshot comunidades.inf.uach.cl"
+      />
+
+      <PortfolioImage
+        src="/comunidades_admin_1.png"
+        alt="Screenshot comunidades admin 1"
+      />
+      <PortfolioImage
+        src="/comunidades_admin_2.png"
+        alt="Screenshot comunidades admin 2"
+      />
+      <PortfolioImage
+        src="/comunidades_admin_3.png"
+        alt="Screenshot comunidades admin 2"
+      />
     </Grid>
   );
 };
@@ -336,13 +569,16 @@ const AwesomeTemplates: FC = () => {
         <Segment inverted secondary>
           In development, available at
           <Segment>
-            <a href="https://awesome-templates.dev">
+            <a target="_blank" href="https://awesome-templates.dev">
               https://awesome-templates.dev
             </a>
           </Segment>
           and it's source code at
           <Segment>
-            <a href="https://github.com/PabloSzx/awesome-templates">
+            <a
+              target="_blank"
+              href="https://github.com/PabloSzx/awesome-templates"
+            >
               https://github.com/PabloSzx/awesome-templates
             </a>
           </Segment>
@@ -353,9 +589,11 @@ const AwesomeTemplates: FC = () => {
         <p>
           <b>Awesome Templates</b> is a personal project, the application offers
           a <b>centralized</b> list of programming projects templates, using the{" "}
-          <a href="https://developer.github.com/v4/">GitHub API</a> and open for
-          the open source community to add templates and improve the app
-          functionality.
+          <a target="_blank" href="https://developer.github.com/v4/">
+            GitHub API
+          </a>{" "}
+          and open for the open source community to add templates and improve
+          the app functionality.
         </p>
         <p>This web app aims to help for:</p>
         <ul>
@@ -372,19 +610,29 @@ const AwesomeTemplates: FC = () => {
         <p>This application is being made using:</p>
         <ul>
           <li>
-            <a href="https://graphql.org/">GraphQL</a>
+            <a target="_blank" href="https://graphql.org/">
+              GraphQL
+            </a>
           </li>
           <li>
-            <a href="https://reactjs.org/">React.js</a>
+            <a target="_blank" href="https://reactjs.org/">
+              React.js
+            </a>
           </li>
           <li>
-            <a href="https://nodejs.org/">Node.js</a>
+            <a target="_blank" href="https://nodejs.org/">
+              Node.js
+            </a>
           </li>
           <li>
-            <a href="https://www.typescriptlang.org/">TypeScript</a>
+            <a target="_blank" href="https://www.typescriptlang.org/">
+              TypeScript
+            </a>
           </li>
           <li>
-            <a href="https://www.postgresql.org/">PostgreSQL</a>
+            <a target="_blank" href="https://www.postgresql.org/">
+              PostgreSQL
+            </a>
           </li>
         </ul>
         <p>
@@ -393,22 +641,34 @@ const AwesomeTemplates: FC = () => {
         </p>
         <ul>
           <li>
-            <a href="https://nextjs.org/">Next.js</a>
+            <a target="_blank" href="https://nextjs.org/">
+              Next.js
+            </a>
           </li>
           <li>
-            <a href="https://expressjs.com/">Express.js</a>
+            <a target="_blank" href="https://expressjs.com/">
+              Express.js
+            </a>
           </li>
           <li>
-            <a href="https://www.apollographql.com/">Apollo GraphQL</a>
+            <a target="_blank" href="https://www.apollographql.com/">
+              Apollo GraphQL
+            </a>
           </li>
           <li>
-            <a href="https://typegraphql.ml/">TypeGraphQL</a>
+            <a target="_blank" href="https://typegraphql.ml/">
+              TypeGraphQL
+            </a>
           </li>
           <li>
-            <a href="https://typeorm.io/">TypeORM</a>
+            <a target="_blank" href="https://typeorm.io/">
+              TypeORM
+            </a>
           </li>
           <li>
-            <a href="https://react.semantic-ui.com/">Semantic UI</a>
+            <a target="_blank" href="https://react.semantic-ui.com/">
+              Semantic UI
+            </a>
           </li>
         </ul>
       </TextSegment>
@@ -434,7 +694,9 @@ const SinanticaWebsite: FC = () => {
             Public website of <b>Sinantica</b>
           </Text>
           <Heading textAlign="center">
-            <a href="https://sinantica.cl">https://sinantica.cl</a>
+            <a target="_blank" href="https://sinantica.cl">
+              https://sinantica.cl
+            </a>
           </Heading>
         </TextSegment>
       </Grid.Row>
@@ -471,6 +733,8 @@ const Portfolio: NextPage = () => {
         return <SinanticaWebsite />;
       case PortfolioOptions.e_ncendio:
         return <E_ncendio />;
+      case PortfolioOptions.communityUach:
+        return <CommunityPracticeUACh />;
       default:
         return null;
     }
