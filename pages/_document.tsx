@@ -14,6 +14,13 @@ export default class MyDocument extends Document<{ styleTags: JSX.Element[] }> {
             href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
             rel="stylesheet"
           />
+          <script
+            async
+            src="https://ackee.pablosz.tech/info.js"
+            data-ackee-server="https://ackee.pablosz.tech"
+            data-ackee-domain-id="8c780402-fea8-4df2-bbc2-eaceb1a6f028"
+            data-ackee-opts='{ "ignoreLocalhost": true, "detailed": true }'
+          ></script>
           <link rel="stylesheet" type="text/css" href="/style.css" />
           <link rel="stylesheet" type="text/css" href="/nprogress.css" />
           {this.props.styleTags}
