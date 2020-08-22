@@ -16,6 +16,12 @@ export default class MyDocument extends Document<{ styleTags: JSX.Element[] }> {
           />
           <link rel="stylesheet" type="text/css" href="/style.css" />
           <link rel="stylesheet" type="text/css" href="/nprogress.css" />
+          <script
+            async
+            defer
+            data-website-id="bbcdcff9-8bd7-47d8-9c7d-24fd898785c5"
+            src="https://umami.pablosz.tech/umami.js"
+          ></script>
           {this.props.styleTags}
           <meta charSet="utf-8" />
           <link rel="shortcut icon" href="/favicon.ico" />
