@@ -9,6 +9,7 @@
     "start": "next start"
   },
   "resolutions": {
+    "node-fetch": "^2.6.1",
     "serialize-javascript": "^4.0.0"
   },
   "dependencies": {
