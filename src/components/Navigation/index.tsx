@@ -7,7 +7,8 @@ import styled from "styled-components";
 import { Box, Flex } from "@chakra-ui/core";
 
 const StyledSegment = styled(Segment)`
-  margin: 0;
+  margin: 0px;
+  margin-bottom: 0px !important;
   width: 100%;
 `;
 
@@ -16,7 +17,7 @@ const Navigation: FC = () => {
 
   const MenuItem: FunctionComponent<{ pathname: string; name: string }> = ({
     pathname,
-    name
+    name,
   }) => (
     <Link href={pathname}>
       <Menu.Item name={pathname} active={pathname === routerPathname}>
