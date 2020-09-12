@@ -67,8 +67,8 @@ const Home: NextPage = () => {
           <Container text>
             <Header as="h1" textAlign="center" icon>
               <Icon name="code" />
-              I'm a full-stack web developer and tech enthusiast who focuses on
-              dynamic functionality.
+              I'm a full-stack web developer, open source and tech enthusiast
+              who focuses on dynamic functionality.
             </Header>
           </Container>
           <Divider />
