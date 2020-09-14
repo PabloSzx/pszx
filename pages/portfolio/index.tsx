@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { NextPage } from "next";
 import Head from "next/head";
 import { FC, useMemo } from "react";
-import { Grid, Menu, Segment } from "semantic-ui-react";
+import { Button, Grid, Icon, Menu, Segment } from "semantic-ui-react";
 import { useRememberState } from "use-remember-state";
 
 import { Box, Heading, Stack, Text } from "@chakra-ui/core";
@@ -141,9 +141,9 @@ const LALATrAC: FC = () => {
         that aims to help for better understanding of students trajectory.
       </TextSegment>
       <TextSegment>
-        It was first designed for program's directors usage, but right now is in
-        development for an expansion for student's own university career
-        trajectory and semester planning.
+        It was first designed for program's directors usage, and it was recently
+        expanded for student's own university career trajectory and semester
+        planning.
       </TextSegment>
 
       <TextSegment>
@@ -186,13 +186,18 @@ const LALATrAC: FC = () => {
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://expressjs.com/">
-              Express.js
+            <a target="_blank" href="http://fastify.io/">
+              Fastify
             </a>
           </li>
           <li>
             <a target="_blank" href="https://knexjs.org/">
               Knex.js
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.apollographql.com/docs/react/">
+              Apollo GraphQL Client
             </a>
           </li>
           <li>
@@ -222,7 +227,7 @@ const LALATrAC: FC = () => {
           </li>
         </ul>
       </TextSegment>
-      <PortfolioVideo src="/trac_video_3.mp4" />
+      <PortfolioVideo src="/new_trac_video.mp4" />
     </Grid>
   );
 };
@@ -727,8 +732,7 @@ const Portfolio: NextPage = () => {
         return <LALATrAC />;
       case PortfolioOptions.lalaVERA:
         return <LALAVera />;
-      // case PortfolioOptions.awesomeTemplates:
-      //   return <AwesomeTemplates />;
+
       case PortfolioOptions.sinanticaWeb:
         return <SinanticaWebsite />;
       case PortfolioOptions.e_ncendio:
@@ -746,6 +750,22 @@ const Portfolio: NextPage = () => {
         <title>Portfolio</title>
       </Head>
       <Stack justifyContent="center" alignItems="center">
+        <Box color="black">
+          <TextSegment>
+            <Text>
+              These are some fullstack projects I've been working on
+              <br /> Please check my{" "}
+              <a target="_blank" href="https://github.com/pabloszx">
+                <Button basic icon labelPosition="left" color="black">
+                  GitHub Profile
+                  <Icon name="github" />
+                </Button>
+              </a>{" "}
+              to check some of my open source <b>libraries</b> and{" "}
+              <b>contributions</b>.
+            </Text>
+          </TextSegment>
+        </Box>
         <Box textAlign="center">
           <Menu inverted fluid stackable>
             {Object.values(PortfolioOptions).map((name, key) => (
