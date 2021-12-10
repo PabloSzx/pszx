@@ -5,13 +5,13 @@ import { FC, useMemo } from "react";
 import { Button, Grid, Icon, Menu, Segment } from "semantic-ui-react";
 import { useRememberState } from "use-remember-state";
 
-import { Box, Heading, Stack, Text } from "@chakra-ui/core";
+import { Box, Heading, Stack, Text } from "@chakra-ui/react";
 
 import {
   PortfolioImage,
   PortfolioVideo,
   TextSegment,
-} from "../../src/components/Portfolio";
+} from "../../components/Portfolio";
 
 enum PortfolioOptions {
   lalaTrAC = "LALA TrAC",

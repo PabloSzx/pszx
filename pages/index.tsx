@@ -10,7 +10,7 @@ import {
 } from "semantic-ui-react";
 import styled from "styled-components";
 
-import { Box, Flex, Heading, Stack } from "@chakra-ui/core";
+import { Box, Flex, Heading, Stack } from "@chakra-ui/react";
 
 // const HeaderCover = styled(Header)`
 //   font-size: 5vw;
@@ -67,21 +67,20 @@ const Home: NextPage = () => {
           <Container text>
             <Header as="h1" textAlign="center" icon>
               <Icon name="code" />
-              I'm a full-stack web developer, active open source contributor,
-              tech enthusiast, and my speciality is creating dynamic
-              functionality.
+              I'm a full-stack web developer, active open source contributor and
+              tech enthusiast.
             </Header>
           </Container>
           <Divider />
           <Stack justifyContent="center" alignItems="center">
-            <p>
+            {/* <p>
               <Link href="/portfolio" passHref>
                 <Button basic icon labelPosition="left" color="black">
                   Portfolio
                   <Icon name="briefcase" />
                 </Button>
               </Link>
-            </p>
+            </p> */}
             <p>
               <a href="https://github.com/pabloszx">
                 <Button basic icon labelPosition="left" color="black">

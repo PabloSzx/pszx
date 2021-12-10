@@ -4,7 +4,7 @@ import { FC, FunctionComponent } from "react";
 import { Image, Menu, Segment } from "semantic-ui-react";
 import styled from "styled-components";
 
-import { Box, Flex } from "@chakra-ui/core";
+import { Box, Flex } from "@chakra-ui/react";
 
 const StyledSegment = styled(Segment)`
   margin: 0px;
@@ -41,8 +41,8 @@ const Navigation: FC = () => {
         <Box width={1 / 18}></Box>
         <Box>
           <Menu inverted secondary fluid size="massive">
-            <MenuItem pathname="/" name="Home" />
-            <MenuItem pathname="/portfolio" name="Portfolio" />
+            {/* <MenuItem pathname="/" name="Home" /> */}
+            {/* <MenuItem pathname="/portfolio" name="Portfolio" /> */}
           </Menu>
         </Box>
       </Flex>
